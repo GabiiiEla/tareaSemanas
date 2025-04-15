@@ -1,0 +1,11 @@
+public class Main {
+    public static void main(String[] args) {
+        D d_obj = new D(1, 2, 3);
+        d_obj.incrementaX_de_A();
+        d_obj.incrementaY_de_B();
+        d_obj.incrementaZ_de_A();
+        d_obj.incrementaXYZ();
+
+        System.out.println("Valores finales en D (a través de composición): x=" + d_obj.a_part.x + ", y=" + d_obj.b_part.y + ", z_propio=" + d_obj.z);
+    }
+}
